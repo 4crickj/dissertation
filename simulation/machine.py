@@ -11,6 +11,11 @@ class Machine(object):
 		
 		for i in range(48):
 			self.nodes.append(Node(i+1, core_class))
+		
+		# Wait for threads to end
+		
+		for n in self.nodes:
+		    n.wait()
 
 
 

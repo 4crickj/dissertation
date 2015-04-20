@@ -17,8 +17,8 @@ class Router(object):
 	def recievePacket(self, link):
 		pass
 
-	def sendPacket(self, p):
-		pass
+	def sendPacket(self, source, payload):
+		print "WOOT"
 
 	def getNode(self):
 		return self.node

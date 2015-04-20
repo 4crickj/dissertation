@@ -7,6 +7,7 @@ class T(Core):
     def startup(self):
         x, y = self.getNode().nodeID()
         print 'Node %d, %d, core %d' % (x, y, self.coreID())
+        self.sendPacket('haha')
 
 
 m = Machine(T)

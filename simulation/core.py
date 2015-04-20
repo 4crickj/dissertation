@@ -59,7 +59,7 @@ class Core(object):
 		pass
 	
 	def sendPacket(self, payload):
-		pass
+		self.node.getRouter().sendPacket(0, payload)
 	
 	def stopCPU(self):
 		self.thread.stop = True

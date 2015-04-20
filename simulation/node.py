@@ -80,6 +80,11 @@ class Node(object):
 
 	def nodeID(self):
 		return self.x, self.y
+	
+	def wait(self):
+	    for c in self.cores:
+	        c.thread.join()
+
 
 
 
